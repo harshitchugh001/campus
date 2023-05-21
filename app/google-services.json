@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "292812733410",
+    "project_id": "gjucampus",
+    "storage_bucket": "gjucampus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292812733410:android:d5b0f4bc36739d99e497bb",
+        "android_client_info": {
+          "package_name": "com.example.gjucampus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292812733410-p5eti4aqlses5kqvduat8cf7rptnju5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHdYO9EwoUXW2X7zV1rOK6383UZA3v_wg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292812733410-p5eti4aqlses5kqvduat8cf7rptnju5o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
