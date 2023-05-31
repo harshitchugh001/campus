@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/main"
+        android:title="main"
+        android:icon="@drawable/ic_baseline_museum"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/Search"
+        android:title="search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        />
+    <!--    <item-->
+    <!--        android:id="@+id/add_c"-->
+    <!--        android:title="add"-->
+    <!--        android:icon="@android:drawable/ic_menu_add"-->
+    <!--        app:showAsAction="always"-->
+    <!--        />-->
+    <item
+        android:id="@+id/create"
+        android:title="add"
+        android:icon="@android:drawable/ic_menu_camera"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/qr"
+        android:title="add"
+        android:icon="@drawable/ic_baseline_qr_code_24"
+        app:showAsAction="always"
+        />
+
+</menu>

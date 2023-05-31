@@ -11,5 +11,7 @@
     <color name="skyblue">#34ebeb</color>
     <color name="darkblue">#061c5c</color>
     <color name="pink">#fa0ade</color>
+    <color name="purple">#8692f7</color>
     <color name="red">#f21811</color>
+    <color name="levender">#E6E6FA</color>
 </resources>
