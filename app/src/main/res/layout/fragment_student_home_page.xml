@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/student_home_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student_home_page">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:padding="8dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/announcement"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:elevation="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Announcement"
+                android:background="#FFC107"
+                android:textSize="16sp"
+                android:gravity="center" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/attendance"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:elevation="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Attendance"
+                android:background="#2196F3"
+                android:textSize="16sp"
+                android:gravity="center" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Assignment Box -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/assignment"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:elevation="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Assignment"
+                android:background="#4CAF50"
+                android:textSize="16sp"
+                android:gravity="center" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Result Box -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/result"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:elevation="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Result"
+                android:background="#FF5722"
+                android:textSize="16sp"
+                android:gravity="center" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Exam Box -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/exam"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:elevation="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Exam"
+                android:background="#E91E63"
+                android:textSize="16sp"
+                android:gravity="center" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Library Box -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/library"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:elevation="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Library"
+                android:background="#9C27B0"
+                android:textSize="16sp"
+                android:gravity="center" />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/timetable"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:elevation="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="timetable"
+                android:background="#9C27B0"
+                android:textSize="16sp"
+                android:gravity="center" />
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+</ScrollView>

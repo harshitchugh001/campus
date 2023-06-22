@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/timetable_days"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="#EAEAEA">
+
+            <Button
+                android:id="@+id/buttonMonday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:padding="8dp"
+                android:text="Monday"
+                android:background="@drawable/button_background" />
+
+            <Button
+                android:id="@+id/buttonTuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:padding="8dp"
+                android:text="Tuesday"
+                android:background="@drawable/button_background" />
+
+            <Button
+                android:id="@+id/buttonWednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:padding="8dp"
+                android:text="Wednesday"
+                android:background="@drawable/button_background" />
+
+            <Button
+                android:id="@+id/buttonThursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:padding="8dp"
+                android:text="Thursday"
+                android:background="@drawable/button_background" />
+
+            <Button
+                android:id="@+id/buttonFriday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Friday"
+                android:background="@drawable/button_background" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</androidx.core.widget.NestedScrollView>

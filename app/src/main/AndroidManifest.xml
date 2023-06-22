@@ -13,6 +13,27 @@
         android:theme="@style/Theme.GJUCampus"
         tools:targetApi="31">
         <activity
+            android:name=".Attendance"
+            android:exported="false" />
+        <activity
+            android:name=".Time_table"
+            android:exported="false" />
+        <activity
+            android:name=".Library"
+            android:exported="false" />
+        <activity
+            android:name=".Result"
+            android:exported="false" />
+        <activity
+            android:name=".Assignment"
+            android:exported="false" />
+        <activity
+            android:name=".Exam"
+            android:exported="false" />
+        <activity
+            android:name=".Announcement"
+            android:exported="false" />
+        <activity
             android:name=".Student_profile"
             android:exported="false" />
         <activity

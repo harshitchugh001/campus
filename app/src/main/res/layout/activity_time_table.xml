@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Time_table">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/yellow"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <fragment
+        android:id="@+id/timetable_days"
+        android:name="com.example.gjucampus.Time_table_days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar" />
+
+    <fragment
+        android:id="@+id/one_day_timetable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/timetable_days"
+        android:layout_above="@id/footer"
+        android:name="com.example.gjucampus.Complete_day_timetable" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c_shape"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/i_act"
+        app:itemTextColor="@drawable/i_act"
+        app:menu="@menu/c_menu_toolber"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
