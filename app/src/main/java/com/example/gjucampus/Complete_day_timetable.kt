@@ -1,6 +1,6 @@
 package com.example.gjucampus
 
-import TimetableAdapter
+import OnedayAdapter
 import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -13,6 +13,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import java.util.Calendar
+import java.util.Locale
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
@@ -21,7 +23,7 @@ class Complete_day_timetable : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
     private lateinit var timetableRecyclerView: RecyclerView
-    private lateinit var timetableAdapter: TimetableAdapter
+    private lateinit var timetableAdapter: OnedayAdapter
     private lateinit var auth: FirebaseAuth
     private lateinit var database: DatabaseReference
     private lateinit var authId: String
@@ -41,8 +43,14 @@ class Complete_day_timetable : Fragment() {
         val view = inflater.inflate(R.layout.fragment_complete_day_timetable, container, false)
         timetableRecyclerView = view.findViewById(R.id.timetableRecyclerView)
         timetableRecyclerView.layoutManager = LinearLayoutManager(requireContext())
-        timetableAdapter = TimetableAdapter(mutableListOf())
+        timetableAdapter = OnedayAdapter(mutableListOf())
         timetableRecyclerView.adapter = timetableAdapter
+        val today = Calendar.getInstance().getDisplayName(Calendar.DAY_OF_WEEK, Calendar.LONG, Locale.getDefault()).toLowerCase()
+
+        auth = FirebaseAuth.getInstance()
+        authId= auth.currentUser?.uid.toString()
+        fetchDetails(authId,today)
+
         return view
     }
 

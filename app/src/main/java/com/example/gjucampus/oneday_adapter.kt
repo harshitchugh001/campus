@@ -6,11 +6,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.gjucampus.R
 import com.example.gjucampus.TimetableItem
 
-class TimetableAdapter(private var timetableList: List<TimetableItem>) :
-    RecyclerView.Adapter<TimetableAdapter.ViewHolder>() {
+class OnedayAdapter(private var timetableList: List<TimetableItem>) :
+    RecyclerView.Adapter<OnedayAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_lecture, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.oneday_lecture_layout, parent, false)
         return ViewHolder(view)
     }
 
